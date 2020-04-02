@@ -1,0 +1,63 @@
+/* disclaimer: some design elements for this page were taken from a page I designed for CS195 */
+
+
+
+/* ===== LAYOUT ===== */
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.banner {
+  width: 80%;
+  margin: 20px 0 40px 0;
+  background-color: var(--gray);
+}
+
+.column {
+  width: 80%;
+  margin: 0 0 40px 0;
+  background-color: var(--gray);
+}
+
+
+
+/* COLORS */
+:root {
+  --gray:     rgba(140, 145, 170, 0.80);
+  --darkgray: rgba( 65,  80,  90, 0.80);
+
+  --lightblue: rgba(230, 230, 250, 1.00);
+  --blue:      rgba( 60, 100, 235, 0.85);
+  --darkblue:  rgba( 25,  90, 150, 1.00);
+}
+
+.blue {
+  color:            var(--lightblue);
+  background-color: var(--blue);
+}
+
+/* ===== TYPOGRAPHY ===== */
+h1 {font-size: 3.0em;}
+h2 {font-size: 2.5em;}
+h3 {font-size: 2.0em;}
+
+
+.title {
+  /* text */
+  font-family: 'Noto Sans', sans-serif;
+  text-shadow: 5px 3px 0 var(--darkgray);
+
+  /* spacing */
+  padding: 0 0 0 20px;
+  margin:  0 0 0 0;
+
+  /* sticky */
+  position: sticky; 
+  top: 0px;
+}
+
+p {
+  font-family: 'Playfair Display', serif;
+}
